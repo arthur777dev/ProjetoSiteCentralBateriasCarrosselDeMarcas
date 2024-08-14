@@ -12,15 +12,12 @@ body {
     max-width: 600px; 
     overflow: initial;
     border: gray;
-    
-  
 }
 
 .carousel-inner {
     display: flex;
     transition: transform 1s ease-in-out;
     width: 100%;
-   
 }
 
 .carousel-slide {
@@ -31,13 +28,10 @@ body {
     align-items: center; 
 }
 
-
 .carousel-slide img {
     width: 80%;
     display: block;
-    
 }
-
 
 button {
     position: absolute;
@@ -67,20 +61,21 @@ button {
 .next {
     top: 50%;
     right: -1100px;
-
 }
 
-        .carousel-control-next {
-            z-index: 1;    }
-            .titulo {
-                margin-top: 20px; 
-                font-size: 40px;
-                color: #ffffff;
-                text-align: center;
-                position: absolute;
-                top: 10px; 
-                left: 50%;
-                transform: translateX(-50%); 
-                width: 100%;
-                z-index: 1000;
-            }
+.carousel-control-next {
+    z-index: 1;
+}
+
+.titulo {
+    margin-top: 20px; 
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    top: 10px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 100%;
+    z-index: 1000;
+}
