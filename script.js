@@ -2,9 +2,9 @@ let slideIndex = 0;
 const slides = document.querySelectorAll('.carousel-slide');
 const totalSlides = slides.length;
 const carouselInner = document.querySelector('.carousel-inner');
-const intervalTime = 2000; 
-const transitionTime = 1500; 
-let isTransitioning = false; 
+const intervalTime = 2000;
+const transitionTime = 1500;
+let isTransitioning = false;
 
 
 function showSlide(index) {
@@ -21,35 +21,35 @@ function showSlide(index) {
 }
 
 function moveSlide(step) {
-    if (isTransitioning) return; 
+    if (isTransitioning) return;
     isTransitioning = true;
 
     const newSlideIndex = slideIndex + step;
 
     if (newSlideIndex >= totalSlides) {
-        carouselInner.style.transition = 'none'; 
-        showSlide(0); 
+        carouselInner.style.transition = 'none';
+        showSlide(0);
         setTimeout(() => {
             carouselInner.style.transition = `transform ${transitionTime}ms ease-in-out`; // Reativa a transição
-            slideIndex = 1; 
+            slideIndex = 1;
             showSlide(slideIndex);
-            isTransitioning = false; 
+            isTransitioning = false;
         }, 20);
     } else if (newSlideIndex < 0) {
-        carouselInner.style.transition = 'none'; 
-        showSlide(totalSlides - 1); 
+        carouselInner.style.transition = 'none';
+        showSlide(totalSlides - 1);
         setTimeout(() => {
             carouselInner.style.transition = `transform ${transitionTime}ms ease-in-out`; // Reativa a transição
-            slideIndex = totalSlides - 2; 
-            showSlide(slideIndex); 
-            isTransitioning = false; 
+            slideIndex = totalSlides - 2;
+            showSlide(slideIndex);
+            isTransitioning = false;
         }, 20);
     } else {
         slideIndex = newSlideIndex;
         showSlide(slideIndex);
         setTimeout(() => {
-            isTransitioning = false; 
-        }, transitionTime); 
+            isTransitioning = false;
+        }, transitionTime);
     }
 }
 

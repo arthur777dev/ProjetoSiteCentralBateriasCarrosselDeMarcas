@@ -9,7 +9,7 @@ body {
 .carousel {
     position: relative;
     width: 70%;
-    max-width: 600px; 
+    max-width: 600px;
     overflow: initial;
     border: gray;
 }
@@ -24,8 +24,8 @@ body {
     min-width: 100%;
     box-sizing: border-box;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
 }
 
 .carousel-slide img {
@@ -43,8 +43,8 @@ button {
     padding: 10px;
     cursor: pointer;
     font-size: 18px;
-    height: 50px; 
-    width: 50px; 
+    height: 50px;
+    width: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,7 +54,7 @@ button {
 }
 
 .prev {
-    top: 50%; 
+    top: 50%;
     left: 10px;
 }
 
@@ -68,14 +68,14 @@ button {
 }
 
 .titulo {
-    margin-top: 20px; 
+    margin-top: 20px;
     font-size: 40px;
     color: #ffffff;
     text-align: center;
     position: absolute;
-    top: 10px; 
+    top: 10px;
     left: 50%;
-    transform: translateX(-50%); 
+    transform: translateX(-50%);
     width: 100%;
     z-index: 1000;
 }
